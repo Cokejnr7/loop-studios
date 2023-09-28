@@ -13,11 +13,17 @@
     --Very-Dark-Gray: hsl(0, 0%, 41%);
 }
 
+/* -------------------------- utility classes ----------------------------- */
+
 .container{
     min-width: 80vw;
     max-width: 80vw;
     margin: 0 auto;
 }
+
+/* ----------------------- end of utility class style --------------------- */
+
+
 
 
 header {
@@ -72,21 +78,23 @@ nav li{
 }
 
 
-/* hamburger */
+/* -------------------------- hamburger style ----------------------------------- */
 
 .hamburger {
     width: 36px;
     height: 36px;
-    border: 2px solid var(--White);
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .hamburger>span::before,.hamburger>span,.hamburger>span::after {
     height: 3px;
     background-color: var(--White);
     border-radius: 2px;
+    transition: all .25s linear;
 }
 
 .hamburger>span{
@@ -110,6 +118,24 @@ nav li{
     position: absolute;
     /* transform: translateX(-50%); */
 }
+
+.open>span{
+    transform: translateX(-120%);
+}
+
+.open>span::before{
+    transform: translateX(110%) rotate(45deg);
+    top: 0;
+}
+
+.open>span::after{
+    transform: translate(110%) rotate(-45deg);
+    bottom: 0;
+}
+
+/* -------------------------- end of hamburger style --------------------------------- */
+
+
 
 @media screen and (max-width:750px){
 
