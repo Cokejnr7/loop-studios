@@ -26,6 +26,10 @@ html{
     margin: 0 auto;
 }
 
+.container-fluid{
+    min-width: 100%;
+}
+
 /* ----------------------- end of utility class style --------------------- */
 
 
