@@ -6,3 +6,11 @@ hamburger.addEventListener("click", () => {
   mobileNav.classList.toggle("display");
   document.body.classList.toggle("overflow-hidden");
 });
+
+document.addEventListener("click", (e) => {
+  if (e.target.parentElement.classList.contains("mobile-lnks")) {
+    hamburger.classList.toggle("open");
+    mobileNav.classList.toggle("display");
+    document.body.classList.toggle("overflow-hidden");
+  }
+});
