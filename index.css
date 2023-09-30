@@ -274,11 +274,11 @@ section.interactive{
 .content p{
     position: absolute;
     left: 5%;
-    bottom: 1.5rem;
+    bottom: 10%;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-size: clamp(1.6rem, 2.8vw, 3rem);
-    color: var(--Dark-Gray);
+    color: var(--White);
 }
 
 /*-------------------------------------- end of creations section -------------------------------------- */
