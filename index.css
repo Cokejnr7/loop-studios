@@ -245,14 +245,13 @@ section.interactive{
     border: 2px solid var(--Black);
     padding: .5rem 4rem;
     background-color: var(--White);
-    display: none;
 }
 
 .creations{
     margin-top: 7rem;
     display: flex;
     flex-direction: column;
-    gap: 3.8rem;
+    gap: 2.7rem;
 }
 
 .creations .content{
@@ -279,6 +278,16 @@ section.interactive{
     text-transform: uppercase;
     font-size: clamp(1.6rem, 2.8vw, 3rem);
     color: var(--White);
+}
+
+.desktop-button{
+    display: none;
+}
+
+.mobile-button{
+    min-width: 30%;
+    align-self: center;
+    display: block;
 }
 
 /*-------------------------------------- end of creations section -------------------------------------- */
@@ -340,8 +349,12 @@ section.interactive{
     }
 
 
-    .creations button{
+    .desktop-button{
         display: block;
+    }
+
+    .mobile-button{
+        display: none;
     }
 
     .creations>.header{
