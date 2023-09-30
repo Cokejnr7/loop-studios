@@ -25,6 +25,11 @@ p{
  color: var(--Very-Dark-Gray);
 }
 
+main{
+    padding: 6.25rem 0;
+    width: 100%;
+}
+
 /* -------------------------- utility classes ----------------------------- */
 
 .container{
@@ -179,11 +184,6 @@ nav a:hover::after{
 /* -------------------------- end of hamburger style --------------------------------- */
 
 
-main{
-    padding: 6.25rem 0;
-    width: 100%;
-}
-
 
 /* --------------------------------- interactive section --------------------------------- */
 
@@ -222,6 +222,36 @@ section.interactive{
 
 /* --------------------------------- end of interactive section --------------------------------- */
 
+
+/*-------------------------------------- creations section -------------------------------------- */
+
+.creations h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem,3vw,2.8rem);
+}
+
+.creations>.header{
+    display: flex;
+    justify-content: center;
+}
+
+.creations button{
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 2px solid var(--Black);
+    padding: .5rem 5%;
+    background-color: var(--White);
+    display: none;
+}
+
+.creations{
+    margin-top: 6.25rem;
+}
+
+/*-------------------------------------- creations section -------------------------------------- */
 
 @media screen and (min-width:780px){
 
@@ -274,5 +304,13 @@ section.interactive{
         padding-top: 8%;
         padding-left: 8%;
         /* left: ; */
+    }
+
+
+    .creations button{
+        display: block;
+    }
+    .creations>.header{
+        justify-content: space-between;
     }
 }
