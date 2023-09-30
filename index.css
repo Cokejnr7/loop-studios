@@ -404,6 +404,29 @@ footer{
         grid-template-columns: repeat(4,1fr);
         column-gap: 2rem;
     }
+
+    .footer-content{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .footer-links{
+        flex-direction: row;
+    }
+
+    .logo-footer-links{
+        align-items: start;
+    }
+
+    .social-links-rights{
+        align-items: end;
+    }
+
+    .footer-content{
+        align-items: center;
+    }
+
+
 }
 
 /*------------------------------------------ end of media queries -----------------------------------------*/
