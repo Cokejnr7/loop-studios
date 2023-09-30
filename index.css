@@ -391,6 +391,7 @@ button:hover{
 footer{
     background-color: var(--Black);
     padding: 10vh 0px;
+    position: relative;
 }
 
 .footer-content{
