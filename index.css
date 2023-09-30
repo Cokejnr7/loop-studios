@@ -113,7 +113,7 @@ nav a::after{
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -3px;
     width: 100%;
     background-color: var(--White);
     height: 2px;
@@ -232,9 +232,10 @@ section.interactive{
     font-size: clamp(1.5rem,3vw,2.8rem);
 }
 
-.creations>.header{
+.creations > .header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .creations button{
@@ -242,16 +243,38 @@ section.interactive{
     text-transform: uppercase;
     font-weight: 400;
     border: 2px solid var(--Black);
-    padding: .5rem 5%;
+    padding: .5rem 4rem;
     background-color: var(--White);
     display: none;
 }
 
 .creations{
-    margin-top: 6.25rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
 }
 
-/*-------------------------------------- creations section -------------------------------------- */
+.creations .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+   
+}
+
+.content img{
+    width: 100%;
+    height: auto;
+}
+
+.content p{
+    
+}
+
+/*-------------------------------------- end of creations section -------------------------------------- */
+
+
+/*-------------------------------------------- media queries ---------------------------------------------*/
 
 @media screen and (min-width:780px){
 
@@ -310,7 +333,15 @@ section.interactive{
     .creations button{
         display: block;
     }
+
     .creations>.header{
         justify-content: space-between;
     }
+
+    .creations .content{
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 2rem;
+    }
 }
+
+/*------------------------------------------ end of media queries -----------------------------------------*/
