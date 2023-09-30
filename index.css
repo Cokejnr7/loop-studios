@@ -59,6 +59,7 @@ header h1{
     max-width: clamp(60%,10vw,80%);
     text-transform: uppercase;
     font-size: clamp(2.4rem, 3.6vw, 4rem);
+    line-height: clamp(3rem, 4vw,3.6rem);
 }
 
 .frame{
@@ -71,7 +72,7 @@ header h1{
 .header-content{
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 20vh;
 }
 
 nav{
@@ -180,6 +181,7 @@ nav a:hover::after{
 
 main{
     padding: 6.25rem 0;
+    width: 100%;
 }
 
 
@@ -193,15 +195,17 @@ section.interactive,.interactive>div {
 
 section.interactive{
     gap: 1.875rem;
+    position: relative;
 }
 
 .interactive>div{
     gap: .75rem;
-    padding: 0px 1.5%;
+    padding: 0px 1.2%;
 }
 
 .interactive img {
     width: 100%;
+    height: auto;
 }
 
 .interactive h2,.interactive p{
@@ -209,10 +213,11 @@ section.interactive{
 }
 
 .interactive h2{
-    max-width: 200px;
+    max-width: 20rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    font-size: clamp(1.5rem,3vw,2.8rem);
 }
 
 /* --------------------------------- end of interactive section --------------------------------- */
@@ -222,6 +227,10 @@ section.interactive{
 
     .hamburger{
         display: none;
+    }
+
+    .header-content{
+        gap: 12vh;
     }
 
     nav ul{
@@ -234,10 +243,36 @@ section.interactive{
     
     header h1{
         max-width: 80%;
-        line-height: clamp(3rem, 4vw,3.6rem);
+       
     }
 
     header{
         background-image: url("images/desktop/image-hero.jpg")
+    }
+
+    section.interactive p{
+        text-align: left;
+        max-width: 35rem;
+    }
+
+    section.interactive h2{
+        max-width: 40rem;
+        text-align: left;
+    }
+
+    section.interactive{
+        align-items: flex-start;
+    }
+
+    .interactive>div{
+        position: absolute;
+        min-width: 55%;
+        gap: 30px;
+        bottom: 0;
+        left:  clamp(21rem,50%,35rem);
+        background-color: var(--White);
+        padding-top: 8%;
+        padding-left: 8%;
+        /* left: ; */
     }
 }
