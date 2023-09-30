@@ -308,6 +308,7 @@ section.interactive{
     background-color: var(--White);
     transition: all 0.25s;
     cursor: pointer;
+    color: var(--Black);
 }
 
 button:hover{
@@ -372,7 +373,7 @@ button:hover{
     text-transform: uppercase;
     font-size: clamp(1.6rem, 2.8vw, 3rem);
     color: var(--White);
-    max-width: 30%;
+    max-width: 40%;
 }
 
 .desktop-button{
@@ -406,6 +407,7 @@ footer{
     align-items: center;
     gap: 1.56rem;
 }
+
 .footer-links{
     display: flex;
     flex-direction: column;
