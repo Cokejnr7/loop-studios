@@ -58,7 +58,7 @@ main{
 /* ----------------------- end of utility class style --------------------- */
 
 
-/* .mobile-nav{
+.display{
     position: fixed;
     top: 0;
     left: 0;
@@ -66,12 +66,11 @@ main{
     height: 100%;
     background-color: var(--Black);
     z-index: 1;
-    
-} */
+}
 
-/* body{
+.overflow-hidden{
     overflow: hidden;
-} */
+}
 
 
 header {
@@ -112,6 +111,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 3rem 0;
+    z-index: 2;
 } 
 
 nav img{
@@ -153,7 +153,6 @@ a:hover::after{
     align-items: center;
     cursor: pointer;
     overflow: hidden;
-    z-index: 2;
 }
 
 .hamburger>span::before,.hamburger>span,.hamburger>span::after {
@@ -412,7 +411,7 @@ footer{
 
     section.interactive p{
         text-align: left;
-        max-width: 35rem;
+        max-width: 30rem;
     }
 
     section.interactive h2{
@@ -431,8 +430,8 @@ footer{
         bottom: 0;
         left:  clamp(21rem,50%,35rem);
         background-color: var(--White);
-        padding-top: 8%;
-        padding-left: 8%;
+        padding-top: 10%;
+        padding-left: 10%;
         /* left: ; */
     }
 
@@ -479,7 +478,9 @@ footer{
         max-width: 85%;
     }
 
-
+    .mobile-nav{
+        display: none ;
+    }
 }
 
 /*------------------------------------------ end of media queries -----------------------------------------*/
