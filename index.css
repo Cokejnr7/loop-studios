@@ -25,6 +25,19 @@ p{
  color: var(--Very-Dark-Gray);
 }
 
+a{
+    color: var(--White);
+    text-decoration: none;
+    position: relative;
+}
+
+li{
+    list-style-type: none;
+    font-family: 'Alata', sans-serif;   
+    cursor: pointer;
+}
+
+
 main{
     padding: 6.25rem 0;
     width: 100%;
@@ -97,17 +110,7 @@ nav>ul{
     gap: 33px;
 }
 
-nav li{
-    list-style-type: none;
-    font-family: 'Alata', sans-serif;   
-    cursor: pointer;
-}
 
-nav a{
-    color: var(--White);
-    text-decoration: none;
-    position: relative;
-}
 
 nav a::after{
     content: "";
@@ -292,6 +295,42 @@ section.interactive{
 
 /*-------------------------------------- end of creations section -------------------------------------- */
 
+
+footer{
+    background-color: var(--Black);
+    padding: 10vh 0px;
+}
+
+.footer-content{
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.logo-footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.56rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.94rem;
+}
+
+
+.social-links-rights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.94rem;
+}
+
+.social-links{
+    display: flex;
+    gap: 0.94rem;
+}
 
 /*-------------------------------------------- media queries ---------------------------------------------*/
 
